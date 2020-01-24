@@ -22,6 +22,9 @@ body{
 p{
 	text-align: left
 }
+.useful{
+	color: #ffff00
+}
 
 #test{
 	color: #ff00ff
