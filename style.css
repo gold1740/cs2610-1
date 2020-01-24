@@ -19,6 +19,9 @@ body{
 body{
 	padding: 15px 
 }
+p{
+	text-align: left
+}
 
 #test{
 	color: #ff00ff
