@@ -80,7 +80,7 @@ class CS2610Assn1(BaseHTTPRequestHandler):
             self.serve_file('pizza.jpeg', 'image/jpeg')
  
         elif self.path == '/about':
-            self.redir301()
+            self.redir301('/about.html')
 
         elif self.path == '/Client':
             self.redir301('/Client.png')
@@ -94,10 +94,10 @@ class CS2610Assn1(BaseHTTPRequestHandler):
         elif self.path == '/pizza':
             self.redir301('/pizza.png')
 
-        elif self.path == '/' or self.path == '':
+        elif self.path == '/' or self.path == '' or self.path == '/index':
             self.redir301('/index.html')
 
-        elif self.path == '/help':
+        elif self.path == '/help'or self.path == '/tips' or self.path == '/tips.html':
             self.redir301('/techtips.html')
 
         elif self.path =='/teapot':
